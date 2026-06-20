@@ -223,7 +223,7 @@ def generate_launch_desscription(){
 return LaunchDescription([talker_node, listener_node])
 ```
 #TF坐标变换
-    模拟小车odom里程计坐标变换(动态坐标变换)
+    模拟小车odom里程计坐标变换(动态坐标广播)
     ```
   #include "rclcpp/rclcpp.hpp"
   #include "tf2_ros/transform_broadcaster.h"
@@ -253,3 +253,9 @@ return LaunchDescription([talker_node, listener_node])
                transform.transform.translation.x = x_pos_;
                transform.transform.translation.y = y_pos_;
                
+#静态tf广播
+#URDF
+#Xacro
+#Gazebo
+#启动仿真实例
+#完整的Action demo
